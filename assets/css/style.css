@@ -54,15 +54,23 @@ header {
 }
 
 #apresentacao h1 {
-    margin-bottom: 1em;
+    margin-bottom: 0.25em;
 }
 
-#apresentacao h1:before {
-    content: "< "
+#apresentacao h2 {
+    font-size: 22px;
+    margin-bottom: 2em;
+    color: rgb(174, 13, 13);
 }
 
-#apresentacao h1:after {
-    content: " />"
+#apresentacao h2:before {
+    content: "< ";
+    color: #FFF;
+}
+
+#apresentacao h2:after {
+    content: " />";
+    color: #FFF;
 }
 
 header div {
@@ -104,6 +112,10 @@ section h2:after {
     color: rgb(223, 216, 216);
 }
 
+#contato > p {
+    margin-bottom: 2em;
+}
+
 #contato div {
     margin-bottom: 1em;
 }
@@ -116,4 +128,13 @@ section h2:after {
 footer {
     text-align: center;
     margin-bottom: 1em;
+}
+
+footer p a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer p a:hover {
+    color: rgb(218, 218, 218);
 }
